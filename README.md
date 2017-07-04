@@ -5,10 +5,11 @@ Author: Reuven Chachashvili
 
 Please run on node version 6.9.0+, npm version 3+
 
-1. Install dependencies by running `npm install`.
-2. Paste the provided tweeter credentials into `twitter-credentials.json`.
-3. Run `npm run build` - will build the client side application bundle.
-4. Run `npm start` - at the end of the process the application will be available through `http://localhost:3000/`.
+1. Clone the repository: `git clone https://github.com/Reuvenc/twitter-oauth-api-usage.git`.
+2. Install dependencies by running `npm install`.
+3. Paste the provided tweeter credentials into `twitter-credentials.json`.
+4. Run `npm run build` - will build the client side application bundle.
+5. Run `npm start` - at the end of the process the application will be available through `http://localhost:3000/`.
 
 ## Implementation
 In order to achieve the requirements described in the home assignment, I used the following:
