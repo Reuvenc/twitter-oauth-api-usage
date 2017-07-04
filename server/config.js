@@ -4,10 +4,6 @@
 const path = require('path');
 const twitterCredentials = require('../twitter-credentials.json');
 
-if (!twitterCredentials.consumerKey || !twitterCredentials.consumerSecret) {
-	throw new Error('Please provide valid twitter credentials in twitter-credentials.json: consumerKey, consumerSecret');
-}
-
 const staticContentLocation = path.join(__dirname, '../build');
 
 /**
@@ -29,3 +25,7 @@ module.exports = {
 	twitterConsumerKey: process.env.TWITTER_CONSUMER_KEY || twitterCredentials.consumerKey,
 	twitterConsumerSecret: process.env.TWITTER_CONSUMER_SECRET || twitterCredentials.consumerSecret,
 };
+
+if (!module.exports.twitterConsumerKey || !module.exports.twitterConsumerSecret) {
+    throw new Error('Please provide valid twitter credentials in twitter-credentials.json: consumerKey, consumerSecret');
+}
