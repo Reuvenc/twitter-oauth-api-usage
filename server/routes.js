@@ -15,7 +15,6 @@ module.exports.configureRoutes = (app, config) => {
 
 	const twitter = new Twitter(config);
 
-	// zooz tweets
 	app.get('/twitter/tweets',
 		AuthMiddleware.verifyLoggedIn(),
 		AuthMiddleware.attachUserInfo(), // will send failure in case of no user.

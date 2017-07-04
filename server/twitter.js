@@ -25,7 +25,7 @@ class Twitter {
 			config.twitterConsumerKey,
 			config.twitterConsumerSecret,
 			'1.0A',
-			`http://localhost:${config.port}/${config.callbackPath}`,
+			`https://twitter-oauth-example.herokuapp.com/${config.callbackPath}`,
 			'HMAC-SHA1'
 		);
 	}
