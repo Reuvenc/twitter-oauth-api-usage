@@ -1,4 +1,4 @@
-# Kang Health - Twitter Oauth & API Usage
+# Twitter Oauth & API Usage
 Author: Reuven Chachashvili
 
 ## Install and Run
